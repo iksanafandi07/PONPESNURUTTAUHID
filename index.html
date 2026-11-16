@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nurut Tauhid – Pondok Pesantren Syalafi</title>
+<style>body{margin:0;background:#0d1411;color:#9aa8a1;font:14px system-ui,sans-serif;display:grid;place-items:center;min-height:100vh}</style>
+</head><body>
+<p>Memuat…</p>
+<script>
+fetch("app.html").then(function(r){if(!r.ok)throw 0;return r.text()}).then(function(t){
+  var tag='<scr'+'ipt src="supabase.js"></scr'+'ipt>',i=t.lastIndexOf("</body>");
+  if(i<0)i=t.length;
+  document.open();document.write(t.slice(0,i)+tag+t.slice(i));document.close();
+}).catch(function(){location.replace("app.html")});
+</script>
+</body></html>
